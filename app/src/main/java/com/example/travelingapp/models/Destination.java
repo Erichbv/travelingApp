@@ -21,7 +21,6 @@ public class Destination implements Serializable {
         this.location = location;
         this.category = category;
         this.webUrl = webUrl;
-
     }
 
     public String getId() {

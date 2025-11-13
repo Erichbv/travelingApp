@@ -14,7 +14,6 @@ public class HomeViewModel extends ViewModel {
     private final MutableLiveData<List<Destination>> destinationsLiveData = new MutableLiveData<>();
     private final List<Destination> fullList = new ArrayList<>();
 
-
     public HomeViewModel() {
         // Inicializar con datos mock
         loadMockDestinations();

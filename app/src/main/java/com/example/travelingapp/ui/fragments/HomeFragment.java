@@ -68,13 +68,12 @@ public class HomeFragment extends Fragment {
                 // Acción cuando hacen clic en el botón "Ver detalle"
                 Toast.makeText(requireContext(), "Ver: " + destination.getName(), Toast.LENGTH_SHORT).show();
 
-                // Luego puedes lanzar un Intent hacia DetailActivity aquí
-                Intent intent = new Intent(requireContext(), DetailActivity.class);
-                // agregando destination al intent
-                intent.putExtra(DetailActivity.EXTRA_DESTINATION, destination);
-                startActivity(intent);
+//                // Luego puedes lanzar un Intent hacia DetailActivity aquí
+//                Intent intent = new Intent(requireContext(), DetailActivity.class);
+//                // agregando destination al intent
+//                intent.putExtra(DetailActivity.EXTRA_DESTINATION, destination);
+//                startActivity(intent);
             });
-
             recyclerView.setAdapter(adapter);
         });
 
