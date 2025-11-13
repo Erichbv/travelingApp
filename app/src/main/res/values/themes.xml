@@ -1,9 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.TravelingApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.TravelGalleryApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/acent</item>
+        <item name="colorError">@color/colorError</item>
+        <item name="android:windowBackground">@color/secondaryBackgroud</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
     </style>
-
-    <style name="Theme.TravelingApp" parent="Base.Theme.TravelingApp" />
+    <style name="Theme.TravelGalleryApp" parent="Base.Theme.TravelGalleryApp" />
 </resources>

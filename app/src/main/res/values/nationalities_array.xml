@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="nationalities_array">
+        <item>Argentina</item>
+        <item>Brasil</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Perú</item>
+    </string-array>
+</resources>
