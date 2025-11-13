@@ -13,10 +13,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.travelgalleryapp.R;
-import com.example.travelgalleryapp.models.User;
-import com.example.travelgalleryapp.utils.InputValidator;
-import com.example.travelgalleryapp.viewmodels.RegisterViewModel;
+import com.example.travelingapp.R;
+import com.example.travelingapp.models.User;
+import com.example.travelingapp.utils.InputValidator;
+import com.example.travelingapp.viewmodels.RegisterViewModel;
 
 import java.util.Calendar;
 

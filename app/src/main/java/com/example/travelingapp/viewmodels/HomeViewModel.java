@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.travelgalleryapp.models.Destination;
+import com.example.travelingapp.models.Destination;
 
 import java.util.ArrayList;
 import java.util.List;

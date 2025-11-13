@@ -4,10 +4,10 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.travelgalleryapp.models.User;
-import com.example.travelgalleryapp.repository.AuthRepository;
-import com.example.travelgalleryapp.repository.UserRepository;
-import com.google.firebase.auth.FirebaseUser;
+import com.example.travelingapp.models.User;
+import com.example.travelingapp.repository.AuthRepository;
+import com.example.travelingapp.repository.UserRepository;
+//import com.google.firebase.auth.FirebaseUser;
 
 public class RegisterViewModel extends ViewModel {
 
@@ -22,18 +22,18 @@ public class RegisterViewModel extends ViewModel {
         userRepository = new UserRepository();
 
         // Observamos el éxito del registro para guardar en Firestore
-        authRepository.getRegisterSuccess().observeForever(user -> {
-            if (user != null) {
-                saveUserData(user.getUid(), tempUser);
-            }
-        });
+//        authRepository.getRegisterSuccess().observeForever(user -> {
+//            if (user != null) {
+//                saveUserData(user.getUid(), tempUser);
+//            }
+//        });
     }
 
     private User tempUser;
 
     public void registerUser(User user, String password) {
         tempUser = user; // guardamos temporalmente los datos para usar luego del registro
-        authRepository.register(user, password);
+//        authRepository.register(user, password);
     }
 
     private void saveUserData(String userId, User user) {
@@ -50,9 +50,9 @@ public class RegisterViewModel extends ViewModel {
         });
     }
 
-    public LiveData<FirebaseUser> getRegisterSuccess() {
-        return authRepository.getRegisterSuccess();
-    }
+//    public LiveData<FirebaseUser> getRegisterSuccess() {
+//        return authRepository.getRegisterSuccess();
+//    }
 
     public LiveData<String> getRegisterError() {
         return authRepository.getRegisterError();

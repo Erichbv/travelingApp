@@ -3,21 +3,21 @@ package com.example.travelingapp.repository;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.travelgalleryapp.models.User;
-import com.google.firebase.firestore.FirebaseFirestore;
+import com.example.travelingapp.models.User;
+//import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class UserRepository {
 
-    private final FirebaseFirestore firestore;
+//    private final FirebaseFirestore firestore;
     private final MutableLiveData<Boolean> saveSuccess = new MutableLiveData<>();
     private final MutableLiveData<String> saveError = new MutableLiveData<>();
 
-    public UserRepository() {
-        firestore = FirebaseFirestore.getInstance();
-    }
+//    public UserRepository() {
+//        firestore = FirebaseFirestore.getInstance();
+//    }
 
     public void saveUser(String userId, @NonNull User user) {
         Map<String, Object> userMap = new HashMap<>();
@@ -29,10 +29,10 @@ public class UserRepository {
         userMap.put("nationality", user.getNacionality());
         userMap.put("status", true);
 
-        firestore.collection("users").document(userId)
-                .set(userMap)
-                .addOnSuccessListener(aVoid -> saveSuccess.setValue(true))
-                .addOnFailureListener(e -> saveError.setValue(e.getMessage()));
+//        firestore.collection("users").document(userId)
+//                .set(userMap)
+//                .addOnSuccessListener(aVoid -> saveSuccess.setValue(true))
+//                .addOnFailureListener(e -> saveError.setValue(e.getMessage()));
     }
 
     public MutableLiveData<Boolean> getSaveSuccess() {

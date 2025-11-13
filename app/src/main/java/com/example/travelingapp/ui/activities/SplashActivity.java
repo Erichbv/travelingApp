@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.travelgalleryapp.R;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+import com.example.travelingapp.R;
+//import com.google.firebase.auth.FirebaseAuth;
+//import com.google.firebase.auth.FirebaseUser;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -21,12 +21,15 @@ public class SplashActivity extends AppCompatActivity {
 
         // evento deplay
         new Handler().postDelayed(() -> {
-            FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
-            if (currentUser != null) {
-                goHome();
-            } else {
-                goLogin();
-            }
+//            FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+//            if (currentUser != null) {
+//                goHome();
+//            } else {
+//                goLogin();
+//            }
+
+            goHome();
+
         }, SPLASH_DELAY);
     }
 

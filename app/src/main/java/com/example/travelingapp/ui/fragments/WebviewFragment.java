@@ -14,7 +14,7 @@ import android.webkit.WebViewClient;
 import android.webkit.WebViewFragment;
 import android.widget.ProgressBar;
 
-import com.example.travelgalleryapp.R;
+import com.example.travelingapp.R;
 
 /**
  * A simple {@link Fragment} subclass.

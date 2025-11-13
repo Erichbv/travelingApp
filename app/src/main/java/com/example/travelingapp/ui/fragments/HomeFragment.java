@@ -13,10 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.example.travelgalleryapp.R;
-import com.example.travelgalleryapp.adapters.DestinationAdapter;
-import com.example.travelgalleryapp.ui.activities.DetailActivity;
-import com.example.travelgalleryapp.viewmodels.HomeViewModel;
+import com.example.travelingapp.R;
+import com.example.travelingapp.adapters.DestinationAdapter;
+import com.example.travelingapp.ui.activities.DetailActivity;
+import com.example.travelingapp.viewmodels.HomeViewModel;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 
@@ -39,7 +39,6 @@ public class HomeFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override

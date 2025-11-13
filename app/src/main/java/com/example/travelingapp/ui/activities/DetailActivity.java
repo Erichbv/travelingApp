@@ -10,10 +10,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.travelgalleryapp.R;
-import com.example.travelgalleryapp.models.Destination;
+import com.example.travelingapp.R;
+import com.example.travelingapp.models.Destination;
 
-import com.example.travelgalleryapp.ui.fragments.WebviewFragment;
+import com.example.travelingapp.ui.fragments.WebviewFragment;
 
 public class DetailActivity extends AppCompatActivity {
 

@@ -11,10 +11,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.travelgalleryapp.R;
-import com.example.travelgalleryapp.utils.SharedPreferencesManager;
-import com.example.travelgalleryapp.viewmodels.LoginViewModel;
-import com.google.firebase.auth.FirebaseAuth;
+import com.example.travelingapp.R;
+import com.example.travelingapp.utils.SharedPreferencesManager;
+import com.example.travelingapp.viewmodels.LoginViewModel;
+//import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -47,23 +47,23 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         // Observador de éxito de inicio de sesión
-        loginViewModel.getLoginSuccess().observe(this, user -> {
-            if (user != null) {
-                // guardar session en shared preferences
-                SharedPreferencesManager.getInstance(this).setLoginStatus(true);
-                SharedPreferencesManager.getInstance(this).setUserEmail(user.getEmail());
-
-                startActivity(new Intent(this, MainActivity.class));
-                finish();
-            }
-        });
+//        loginViewModel.getLoginSuccess().observe(this, user -> {
+//            if (user != null) {
+//                // guardar session en shared preferences
+//                SharedPreferencesManager.getInstance(this).setLoginStatus(true);
+//                SharedPreferencesManager.getInstance(this).setUserEmail(user.getEmail());
+//
+//                startActivity(new Intent(this, MainActivity.class));
+//                finish();
+//            }
+//        });
 
         // Observador de error de inicio de sesión
-        loginViewModel.getLoginError().observe(this, error -> {
-            if (error != null) {
-                Toast.makeText(this, error, Toast.LENGTH_LONG).show();
-            }
-        });
+//        loginViewModel.getLoginError().observe(this, error -> {
+//            if (error != null) {
+//                Toast.makeText(this, error, Toast.LENGTH_LONG).show();
+//            }
+//        });
     }
     
     public void onLoginClick(View view) {

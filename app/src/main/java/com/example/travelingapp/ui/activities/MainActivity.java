@@ -6,9 +6,9 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.travelgalleryapp.R;
-import com.example.travelgalleryapp.ui.fragments.HomeFragment;
-import com.example.travelgalleryapp.ui.fragments.ProfileFragment;
+import com.example.travelingapp.R;
+import com.example.travelingapp.ui.fragments.HomeFragment;
+import com.example.travelingapp.ui.fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {

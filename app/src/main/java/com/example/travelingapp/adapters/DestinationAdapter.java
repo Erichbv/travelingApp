@@ -13,8 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.travelgalleryapp.R;
-import com.example.travelgalleryapp.models.Destination;
+import com.example.travelingapp.R;
+import com.example.travelingapp.models.Destination;
 
 import java.util.List;
 
@@ -73,5 +73,4 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
             buttonDetails = itemView.findViewById(R.id.buttonDetails);
         }
     }
-
 }
